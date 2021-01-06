@@ -17,6 +17,7 @@ function iniciar(){
     mundo.iluminarConFoto('./hdr/fondo.png',false);
 
     var marcador = contextoAR.crearMarcador('marcador/botella.patt');
+    var marcador1 = contextoAR.crearMarcador('marcador/gat.patt');
 
     mundo.escena.add(modelos);
 
@@ -35,7 +36,7 @@ function iniciar(){
     modelos[0].position.x+=0.25
 
     modelos[1] = new THREE.Object3D();
-    cargarModelo('./modelo/Amongus.glb',marcador,modelos[1]);
+    cargarModelo('./modelo/Amongus.glb',marcador1,modelos[1]);
     modelos[1].scale.x=0.25
     modelos[1].scale.y=0.25
     modelos[1].scale.z=0.25
