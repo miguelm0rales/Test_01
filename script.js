@@ -13,8 +13,8 @@ var contextoAR;
 function iniciar(){
     mundo = new MundoAR();
     contextoAR = new ContextoAR(mundo);
-    //mundo.iluminar();
-    mundo.iluminarConFoto('./hdr/fondo.png',false);
+    mundo.iluminar();
+    //mundo.iluminarConFoto('./hdr/fondo.png',false);
 
     var marcador = contextoAR.crearMarcador('marcador/botella.patt');
     var marcador1 = contextoAR.crearMarcador('marcador/gat.patt');
